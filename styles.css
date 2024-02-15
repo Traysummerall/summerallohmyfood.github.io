@@ -1,0 +1,713 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'shrink-hand';
+	src: url('../../fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto-medium';
+	src: url('../../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url('../../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url('../../fonts/Roboto/Roboto-Thin.ttf');
+}
+.text,
+.text2,
+.text3 {
+	font-family: 'roboto-bold';
+}
+
+.main-content-container {
+	background-color: whitesmoke;
+	margin-top: 45px;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+}
+
+#ohmyfood {
+	display: block;
+	margin: 0 auto;
+	width: 160px;
+	padding-top: 6%;
+	padding-bottom: 4%;
+	text-align: center;
+	padding-right: 5%;
+}
+
+.logo-container {
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	z-index: 2;
+	position: relative;
+}
+
+header {
+	background-color: whitesmoke;
+}
+
+body {
+	background-color: white;
+}
+
+.location {
+	display: flex;
+	background-color: rgb(224, 226, 226);
+	padding-top: 5%;
+	padding-bottom: 5%;
+	justify-content: center;
+	font-family: 'roboto-regular';
+	text-align: center;
+	padding-right: 5%;
+}
+
+.location span {
+	margin-left: 10px;
+}
+
+.location-wrapper .fa-solid.fa-location-dot {
+	color: black;
+}
+
+.explore-container {
+	background: linear-gradient(to bottom, #ff79da, #9356dc);
+	padding: 17px;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 30px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.explore-container h4 {
+	margin: 0;
+	color: white;
+	font-family: 'roboto-regular';
+	transition: opacity 0.3s;
+}
+
+.explore-container:hover {
+	background: linear-gradient(
+		to bottom,
+		#f58cd8,
+		#9356dc
+	); /* Adjust the gradient to make it lighter on hover */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust the box shadow to make it darker on hover */
+}
+
+.explore-container h4:hover {
+	opacity: 0.9;
+}
+
+.explore-container a {
+	text-decoration: none;
+}
+
+.label1,
+.label2,
+.label3 {
+	position: relative;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: whitesmoke;
+	border-radius: 20px;
+	margin-right: 5%;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	color: black;
+	transition: background-color 0.3s;
+}
+
+.label1,
+.label2,
+.label3 {
+	position: relative;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+	position: absolute;
+	top: 50%;
+	left: -13px;
+	transform: translateY(-50%);
+}
+
+.filter-icon-wrapper .fa-solid.fa-mobile-screen-button,
+.fa-solid {
+	color: gray;
+	font-size: 20px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	transition: color 0.3s;
+}
+
+.fa-list {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.fa-store {
+	padding-top: 0.9%;
+	padding-bottom: 0.9%;
+	padding-left: 18px;
+	padding-right: 24px;
+}
+
+.text3 {
+	margin-right: 22px;
+}
+
+.text2 {
+	margin-right: 98px;
+}
+
+.number {
+	margin-right: 5px;
+	border: 0px solid black;
+	border-radius: 50%;
+	padding: 5px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	background: #9356dc;
+	color: white;
+	font-family: 'roboto-regular';
+	font-size: 13px;
+}
+
+.filter-icon-wrapper i {
+	margin: 0 20px;
+}
+
+#fullpallet,
+#bastille,
+#le-gourmand,
+#enchanted-plate {
+	font-family: 'roboto-bold';
+	margin-left: 12px;
+	margin-top: 0%;
+	margin-bottom: 0%;
+}
+
+#newyork1,
+#newyork2,
+#newyork3,
+#newyork4 {
+	font-family: 'roboto-thin';
+	margin-left: 12px;
+	margin-top: 2%;
+}
+
+.text {
+	margin-left: 5px;
+	margin-right: 80px;
+}
+
+.explore-container h4 {
+	margin: 0;
+	color: white;
+	font-family: 'roboto-regular';
+}
+
+.discover {
+	font-family: 'roboto-thin';
+	width: 90%;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	text-align: center;
+}
+
+header h1 {
+	text-align: center;
+}
+
+header h2 {
+	text-align: center;
+}
+
+.book-menu {
+	font-family: 'roboto-bold';
+	margin-top: 10%;
+}
+
+.how-it-works {
+	font-family: 'roboto-bold';
+	margin-top: 13%;
+	margin-left: 6%;
+}
+
+.card-image {
+	object-fit: cover;
+}
+
+.stamp .card-image {
+	aspect-ratio: 4/9;
+	border-radius: 15px 15px 0 0;
+	height: 150px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+.stamp {
+	box-shadow: 6px 12px 12px rgba(0, 0, 0, 0.09);
+	margin: 10px;
+	transition: 1s;
+	width: 88%;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+
+	background-color: white;
+	margin-left: 6%;
+	margin-right: 6%;
+	margin-bottom: 5%;
+}
+
+.restaurant-fonts {
+	font-family: 'roboto-bold';
+	margin-left: 6%;
+	padding-top: 9%;
+}
+
+#ohmyfood2 {
+	width: 100px;
+	height: auto;
+}
+
+.restaurant-details {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#ohmyfoodfonts {
+	font-family: 'shrink-hand';
+	color: white;
+	margin-bottom: -5px;
+}
+
+footer {
+	background-color: #414040;
+	color: white;
+}
+
+.left-details {
+	flex: 1;
+}
+
+.right-details {
+	margin-left: 10px;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+	color: white;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+	margin-left: 6%;
+	margin-top: -10px;
+}
+
+#ohmyfoodfonts {
+	margin-left: 6%;
+}
+
+.fa-utensils {
+	margin-bottom: -10px;
+	padding-right: 4%;
+	margin-top: -10px;
+}
+
+.fa-handshake-angle {
+	padding-right: 2%;
+}
+
+#legal {
+	margin-left: 6%;
+	font-family: 'roboto-regular';
+	margin-top: -2%;
+}
+
+#contact {
+	margin-left: 6%;
+	font-family: 'roboto-regular';
+	margin-top: -10px;
+}
+
+#suggest {
+	font-family: 'roboto-regular';
+}
+
+.suggest-restaurant {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	font-family: 'roboto-regular';
+}
+
+.hand {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	font-family: 'roboto-regular';
+}
+
+#become {
+	margin-top: -10px;
+}
+
+.main-content-container {
+	padding-bottom: 10%;
+}
+
+#ohmyfood {
+	font-family: 'shrink-hand';
+}
+
+.label1:hover,
+.label2:hover,
+.label3:hover {
+	background: rgb(245, 238, 249);
+}
+
+.filter-icon-wrapper:hover .fa-solid,
+.filter-icon-wrapper:hover .fa-regular {
+	color: #9356dc;
+}
+
+.label3 .fa-store {
+	color: gray;
+	transition: color 0.3s;
+}
+
+.label3:hover .fa-store {
+	color: #9356dc;
+}
+
+.stamp {
+	position: relative;
+}
+
+.greenish-label {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 60px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-family: 'roboto-regular';
+	background-color: #99e2d0;
+	color: #4e7b70;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+#new1,
+#new2 {
+	margin: 0;
+	line-height: 20px;
+}
+
+body {
+	opacity: 0;
+	animation: fadeInTop 0.75s ease-out forwards;
+}
+
+@keyframes fadeInTop {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.header,
+.how-it-works,
+.main-content-container,
+footer {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.how-it-works {
+	animation: fadeInHowItWorks 0.75s ease-out forwards;
+}
+
+.main-content-container {
+	animation: fadeInMainContent 0.75s ease-out forwards;
+}
+
+footer {
+	animation: fadeInFooter 0.75s ease-out forwards;
+}
+
+@keyframes fadeInHowItWorks {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInMainContent {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInFooter {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+a {
+	color: inherit; /* Inherit the text color from the parent element */
+	text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+	text-decoration: none; /* Remove underline on hover */
+	color: inherit; /* Inherit the text color on hover */
+}
+
+.heart {
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+	margin-right: 20px; /* Adjust this based on your layout */
+	margin-bottom: 10px;
+}
+
+.fa-regular.fa-heart,
+.fa-solid.fa-heart {
+	vertical-align: middle;
+}
+
+.fa-regular.fa-heart {
+	display: block;
+	color: black; /* Set the initial color for the heart outline to black */
+}
+
+.fa-solid.fa-heart::before {
+	content: '♥'; /* Unicode character for a heart */
+	color: transparent; /* Set the initial color for the filled heart to transparent */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+	background: linear-gradient(to bottom, #ff79da, #9356dc, #553181);
+	background-clip: text;
+	-webkit-background-clip: text; /* For compatibility with certain browsers */
+	transition: clip-path 0.5s, color 0.5s; /* Transition property for smoother animation */
+}
+
+/* Apply animation only during hover */
+.heart:hover .fa-solid.fa-heart::before {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	color: transparent; /* Set color back to transparent during hover */
+}
+
+.spinner {
+	width: 100vw;
+	height: 100vh;
+	background: gray;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	display: block;
+	animation: 2s ease spinner forwards;
+}
+
+@keyframes spinner {
+	0% {
+		display: block;
+	}
+	100% {
+		display: none;
+	}
+}
+.spinner2 {
+	align-items: center;
+	display: flex;
+	background: transparent;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 0;
+}
+
+.spinner2::after {
+	content: '';
+	width: 300px;
+	height: 300px;
+	border: 15px solid rgba(221, 221, 221, 0.8666666667);
+	border-top-color: #009578;
+	border-radius: 50%;
+	animation: 2s ease spinner2 forwards;
+	z-index: 0;
+}
+
+@keyframes spinner2 {
+	0% {
+		display: block;
+	}
+	100% {
+		display: none;
+	}
+	from {
+		transform: rotate(0turn);
+	}
+	to {
+		transform: rotate(1turn);
+	}
+}
+body {
+	opacity: 1;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+header {
+	z-index: 99;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0;
+	opacity: 0; /* Initially set opacity to 0 */
+	animation: fadeInTop 2s ease-out forwards; /* Set a fixed duration for initial transparency */
+}
+
+@keyframes fadeInTop {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.header,
+.how-it-works,
+.main-content-container,
+footer {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.how-it-works,
+.main-content-container,
+footer {
+	animation: fadeInImmediate 0s 2s ease-out forwards; /* Delay the immediate appearance animation by 2 seconds */
+}
+
+@keyframes fadeInImmediate {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+header {
+	background-color: whitesmoke;
+	opacity: 0;
+	z-index: 99;
+	animation: fadeInHeader 0s 2s ease-out forwards; /* Delay the header appearance by 2 seconds */
+}
+
+@keyframes fadeInHeader {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.label1,
+.label2,
+.label3 {
+	position: relative;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background: whitesmoke;
+	border-radius: 20px;
+	margin-right: 5%;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	color: black;
+	opacity: 0;
+	transition: background-color 0.3s;
+	animation: fadeInLabels 0s 2s ease-out forwards; /* Delay the labels appearance by 2 seconds */
+}
+
+@keyframes fadeInLabels {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/*# sourceMappingURL=homepage.css.map */
