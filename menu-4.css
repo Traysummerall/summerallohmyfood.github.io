@@ -1,0 +1,518 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'shrink-hand';
+	src: url('../../fonts/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Roboto-medium';
+	src: url('../../fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Black';
+	src: url('../../fonts/Roboto/Roboto-Black.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('../../fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../../fonts/Roboto/Roboto-Light.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('../../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url('../../fonts/Roboto/Roboto-Thin.ttf');
+}
+.text,
+.text2,
+.text3 .h2 {
+	font-family: 'Roboto-Bold';
+}
+
+.tuna,
+.lobster,
+.mushroom-soup,
+.roast-chicken,
+.roasted-lobster,
+.angust-beef-ribs,
+.assorted-desert,
+.Crème-brulée,
+.tiramisu {
+	font-family: 'Roboto-Regular';
+	font-size: 14px;
+	margin-left: 10px;
+}
+
+.yuzu,
+.seasonal-vegetables,
+.truffles,
+.truffle-cream,
+.seasonal-vegetables,
+.mashed-parshnips,
+.chefs-choice,
+.revisted,
+.hazelnuts {
+	font-family: 'Roboto-Thin';
+	font-size: 14px;
+	margin-top: -14px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body {
+	background-color: whitesmoke;
+}
+
+.orange-zest h4,
+.carrots h4,
+.mashed-parsnip h4,
+.vegetable-gnocchis h4,
+.hazelnut h4,
+.revisted h4,
+.blueberries h4 {
+	display: flex;
+}
+
+.entrees,
+.deserts,
+.main-dish {
+	font-family: 'Roboto-Thin';
+	font-size: 12px;
+	margin-top: 50px;
+	position: relative;
+	margin-bottom: 8%;
+	margin-left: 15px;
+}
+
+.entrees::before,
+.deserts::before,
+.main-dish::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 12%;
+	bottom: -10px;
+	height: 3px;
+	background-color: #99e2d0;
+}
+
+#ohmyfood {
+	font-family: 'shrink-hand';
+}
+
+.fa-arrow-left {
+	font-size: 200%;
+	margin-left: 5%;
+	margin-right: 12%;
+	margin-top: -50px;
+	color: black;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-content {
+	display: flex;
+	align-items: center;
+	padding-top: 10px;
+}
+
+#ohmyfood {
+	margin-left: 65px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+.menue-container1 {
+	position: relative;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
+	margin-right: 2%;
+	margin-left: 2%;
+	margin-bottom: 5%;
+	color: black;
+	transition: background-color 0.3s ease;
+	overflow: hidden;
+	border-radius: 20px;
+	background-color: white;
+	flex: 1;
+}
+
+.menue-container1::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	background: linear-gradient(to right, transparent 50%, #99e2d0 50%, #99e2d0 100%);
+	transition: width 0.3s ease, transform 0.3s ease;
+	transform-origin: right center;
+}
+
+.menue-container1:hover::before {
+	width: 30%;
+}
+
+.menue-container1:hover .fa-circle-check {
+	opacity: 1; /* Show the icon on hover */
+	animation: rotateClockwise 0.5s ease forwards;
+}
+
+.fa-circle-check {
+	position: absolute;
+	font-size: 25px;
+	top: 50%; /* Center the icon vertically */
+	left: 89%; /* Center the icon horizontally */
+	transform: translateY(-50%) rotate(0); /* Center the icon precisely */
+	color: rgb(255, 255, 255); /* Ensure the icon color matches the aqua box */
+	transition: opacity 0.3s ease; /* Apply transition to opacity */
+	opacity: 0; /* Initially hide the icon */
+}
+
+@keyframes rotateClockwise {
+	0% {
+		transform: translateY(-50%) rotate(0);
+	}
+	100% {
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
+@keyframes moveFromRight {
+	0% {
+		transform: translateY(-50%) translateX(100%);
+	}
+	100% {
+		transform: translateY(-50%) translateX(0);
+	}
+}
+#bastille-image {
+	width: 100%;
+	height: auto;
+	z-index: -1;
+	position: relative;
+}
+
+.le-gourmand-container {
+	background-color: whitesmoke;
+	z-index: 2;
+	position: relative;
+	margin-top: -40px;
+	border-radius: 40px;
+	margin-right: -10px;
+	margin-left: -10px;
+	margin-bottom: -12px;
+}
+
+.le-gourmand {
+	position: relative;
+	padding-top: 12px;
+	font-family: 'shrink-hand';
+	font-size: 22px;
+	padding-left: 22px;
+}
+
+.heart {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	margin-right: 33px;
+	margin-top: 40px;
+	font-size: 28px;
+}
+
+.fa-regular.fa-heart,
+.fa-solid.fa-heart {
+	vertical-align: middle;
+}
+
+.fa-regular.fa-heart {
+	display: block;
+	color: black; /* Set the initial color for the heart outline to black */
+}
+
+.fa-solid.fa-heart::before {
+	content: '♥'; /* Unicode character for a heart */
+	color: transparent; /* Set the initial color for the filled heart to transparent */
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+	background: linear-gradient(to bottom, #ff79da, #9356dc, #553181);
+	background-clip: text;
+	-webkit-background-clip: text; /* For compatibility with certain browsers */
+	transition: clip-path 0.5s, color 0.5s; /* Transition property for smoother animation */
+}
+
+/* Apply animation only during hover */
+.heart:hover .fa-solid.fa-heart::before {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	color: transparent; /* Set color back to transparent during hover */
+}
+
+.order-button {
+	background: linear-gradient(to bottom, #ff79da, #9356dc);
+	margin-top: 55px;
+	text-align: center;
+	font-family: 'Roboto-Regular';
+	font-size: 18px;
+	color: white;
+	border-radius: 30px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 80px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.full-width-image {
+	margin-left: -10px;
+	margin-right: -10px;
+}
+
+#order {
+	font-size: 18px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+	color: white;
+}
+
+.fa-utensils,
+.fa-handshake-angle {
+	margin-left: 6%;
+	margin-top: -35px;
+}
+
+#ohmyfoodfonts {
+	margin-left: 6%;
+	padding-top: 20px;
+}
+
+.fa-utensils {
+	margin-bottom: -10px;
+	padding-right: 4%;
+	margin-top: -10px;
+}
+
+.fa-handshake-angle {
+	padding-right: 2%;
+}
+
+#legal {
+	margin-left: 6%;
+	font-family: 'Roboto-regular';
+	margin-top: -2%;
+}
+
+#contact {
+	margin-left: 6%;
+	font-family: 'Roboto-regular';
+	margin-top: -10px;
+	padding-bottom: 40px;
+}
+
+#suggest {
+	font-family: 'Roboto-regular';
+}
+
+.suggest-restaurant {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	font-family: 'Roboto-regular';
+}
+
+.hand {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	font-family: 'Roboto-regular';
+}
+
+#become {
+	margin-top: -10px;
+}
+
+#ohmyfoodfonts {
+	font-family: 'shrink-hand';
+	color: white;
+	margin-bottom: -5px;
+}
+
+footer {
+	background-color: #414040;
+	color: white;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-bottom: -30px;
+}
+
+.left-details {
+	flex: 1; /* Takes available space */
+}
+
+.right-details {
+	margin-left: 10px; /* Adjust spacing */
+}
+
+.menue-container1 h2,
+.menue-container1 h4 {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	transition: width 0.3s ease, transform 0.3s ease; /* Add transition for width and transform */
+	z-index: 0;
+}
+
+.menue-container1:hover h2,
+.menue-container1:hover h4 {
+	max-width: 70%;
+}
+
+.menue-container1:hover .bold-text {
+	transform: translateX(-65px) translateY(-50%);
+	margin-right: 0px;
+}
+
+.bold-text {
+	font-family: 'Roboto-Regular';
+	position: absolute;
+	right: 0;
+	top: 0; /* Adjust the top position as needed */
+	transform: translateY(-50%) translateX(0); /* Adjust the transformation */
+	padding-top: 113px;
+	margin-right: 20px;
+	z-index: 2;
+	transition: transform 0.3s ease; /* Smooth transition for position change */
+}
+
+body {
+	opacity: 0;
+	animation: fadeInTop 0.75s ease-out forwards;
+}
+
+@keyframes fadeInTop {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.header,
+.how-it-works,
+.main-content-container,
+footer {
+	opacity: 0;
+	transform: translateY(50px);
+}
+
+.header {
+	animation: fadeInHeader 0.75s ease-out forwards;
+}
+
+.how-it-works {
+	animation: fadeInHowItWorks 0.75s ease-out forwards;
+}
+
+.main-content-container {
+	animation: fadeInMainContent 0.75s ease-out forwards;
+}
+
+footer {
+	animation: fadeInFooter 0.75s ease-out forwards;
+}
+
+@keyframes fadeInHeader {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInHowItWorks {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInMainContent {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes fadeInFooter {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.order-button:hover {
+	background: linear-gradient(
+		to bottom,
+		#f58cd8,
+		#9356dc
+	); /* Adjust the gradient to make it lighter on hover */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjust the box shadow to make it darker on hover */
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.entrees-container,
+.main-dish-container,
+.deserts-container {
+	opacity: 0;
+	animation: fadeIn 0.75s ease-out forwards;
+}
+
+.entrees-container {
+	animation-delay: 0.2s;
+}
+
+.main-dish-container {
+	animation-delay: 0.4s;
+}
+
+.deserts-container {
+	animation-delay: 0.6s;
+}
+
+/*# sourceMappingURL=menu-4.css.map */
