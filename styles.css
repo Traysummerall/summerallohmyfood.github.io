@@ -709,5 +709,10 @@ header {
 		transform: translateY(0);
 	}
 }
+body {
+	max-width: 432px;
+	margin: 0 auto;
+	width: 100%;
+}
 
 /*# sourceMappingURL=homepage.css.map */
